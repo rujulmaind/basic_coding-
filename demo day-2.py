@@ -82,5 +82,20 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 # print("Z" not in name)
 
 #looping through a list
-for i in mylist:
-    print(i)
+# for i in range(1,11):
+#     print(i*2)
+# printing table from 2 to 10 in horizontal way
+# for i in range(2,11):
+#     for j in range(1,11):
+#         print(i*j,end="\t")
+#     print()
+# print table from 2 to 20 
+for i in range(1,11):
+    for j in range(2,11):
+        print(i*j,end="\t")
+    print()
+print("------------------------------------------------------------------")
+for i in range(1,11):
+    for j in range(11,21):
+        print(i*j,end="\t")
+    print()
