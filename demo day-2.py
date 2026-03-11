@@ -65,7 +65,13 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 # print(mylist)
 
 #to return the address of the variable
-math=10
-phy=30
-print(id(math))
-print(id(phy))
+# math=10
+# phy=50
+# print(id(math))
+# print(id(phy))
+
+#alising a list
+mylist=[1,2,3]
+newlist=mylist
+print(mylist)
+print(newlist)
