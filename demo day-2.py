@@ -102,10 +102,47 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 #     print()
 
 #check if valaue is positive or negative or zero
-num=int(input("Enter a number: "))
-if num>0:
-    print("Positive number")
-if num<0:
-    print("Negative number")
-if num==0:
-    print("Zero")
+# num=int(input("Enter a number: "))
+# if num>0:
+#     print("Positive number")
+# if num<0:
+#     print("Negative number")
+# if num==0:
+#     print("Zero")
+
+#write a program to accpet the days and check the working day or weekend
+# day=input("Enter the day: ")
+# if day=="Saturday" or day=="Sunday" or day=="saturday" or day=="sunday" or day=="SATURDAY" or day=="SUNDAY":
+#     print("It's a weekend!")
+# if day!="Saturday" and day!="Sunday" and day!="saturday" and day!="sunday" and day!="SATURDAY" and day!="SUNDAY":
+#     print("It's a working day.")
+
+#wite a program to accept 3 paper marks and calculate total, oercentage and if percentage is greate than equal to 60 then he/she is elligible for placement
+# marks1=int(input("Enter marks of paper 1: "))
+# marks2=int(input("Enter marks of paper 2: "))
+# marks3=int(input("Enter marks of paper 3: "))
+# total=marks1+marks2+marks3
+# percentage=(total/300)*100
+# print("Total marks: ",total)
+# print("Percentage: ",percentage)
+# if percentage>=60:
+#     print("Congratulations! You are eligible for placement.")
+# if percentage<60:
+#     print("Sorry! You are not eligible for placement.")
+
+#write a program to accept 5 different value in 5 different variable and check maximum value and print by using simple if statement
+num1=int(input("Enter number 1: ")) 
+num2=int(input("Enter number 2: "))
+num3=int(input("Enter number 3: "))
+num4=int(input("Enter number 4: "))
+num5=int(input("Enter number 5: "))
+if num1>num2 and num1>num3 and num1>num4 and num1>num5:
+    print("Maximum number is: ",num1)
+if num2>num1 and num2>num3 and num2>num4 and num2>num5:
+    print("Maximum number is: ",num2)
+if num3>num1 and num3>num2 and num3>num4 and num3>num5:
+    print("Maximum number is: ",num3)
+if num4>num1 and num4>num2 and num4>num3 and num4>num5:
+    print("Maximum number is: ",num4)   
+if num5>num1 and num5>num2 and num5>num3 and num5>num4:
+    print("Maximum number is: ",num5)
