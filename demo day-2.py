@@ -90,12 +90,22 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 #         print(i*j,end="\t")
 #     print()
 # print table from 2 to 20 
-for i in range(1,11):
-    for j in range(2,11):
-        print(i*j,end="\t")
-    print()
-print("------------------------------------------------------------------")
-for i in range(1,11):
-    for j in range(11,21):
-        print(i*j,end="\t")
-    print()
+# for i in range(1,11):
+#     for j in range(2,11):
+#         print(i*j,end="\t")
+#     print()
+# print("-------------------------------------------------------------------------------")
+# print("-------------------------------------------------------------------------------")
+# for i in range(1,11):
+#     for j in range(11,21):
+#         print(i*j,end="\t")
+#     print()
+
+#check if valaue is positive or negative or zero
+num=int(input("Enter a number: "))
+if num>0:
+    print("Positive number")
+if num<0:
+    print("Negative number")
+if num==0:
+    print("Zero")
