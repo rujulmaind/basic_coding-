@@ -53,5 +53,19 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 # print(mylist)
 
 #construct a list using list() constructor
-mylist=list(("apple","banana","cherry"))
-print(mylist)
+# mylist=list(("apple","banana","cherry"))
+# print(mylist)
+
+#reverse the list
+# mylist.reverse()  
+# print(mylist)
+
+# #reverse the list in descending order
+# mylist.reverse(-1)
+# print(mylist)
+
+#to return the address of the variable
+math=10
+phy=30
+print(id(math))
+print(id(phy))
