@@ -71,7 +71,16 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 # print(id(phy))
 
 #alising a list
-mylist=[1,2,3]
-newlist=mylist
-print(mylist)
-print(newlist)
+# mylist=[1,2,3]
+# newlist=mylist
+# print(mylist)
+# print(newlist)
+
+#membership operator in and not in
+# name = "mango"
+# print("Z" in name)
+# print("Z" not in name)
+
+#looping through a list
+for i in mylist:
+    print(i)
