@@ -27,10 +27,24 @@
 
 
 # 2. Default argument
-def cityName(city="Nagpur"):
-     print("City: ", city)
+# def cityName(city="Nagpur"):
+#      print("City: ", city)
 
 
-cityName("New York")
-cityName("Mumbai")
-cityName()
+# cityName("New York")
+# cityName("Mumbai")
+# cityName()
+
+#3. variable length arguments
+# def studentsName(*names):
+#     print("Students name: ", names)
+
+# studentsName("Rujul", "Rakshit", "Ayush", "Shivaji")
+
+mylist=[1,2,3,4,5]
+def searchElement(target):
+    for i in range(len(mylist)):
+        if target==mylist[i]:
+             print("Element found at index: ", i)
+             break
+searchElement(3)
