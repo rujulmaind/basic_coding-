@@ -32,20 +32,55 @@
 
 
 # Product of Array Except Self
-def productExceptSelf(nums):
-    n = len(nums)
-    output = [1] * n
-    prefix = 1
-    for i in range(n):
-        output[i] = prefix
-        prefix *= nums[i]
-    suffix = 1
-    for i in range(n - 1, -1, -1):
-        output[i] *= suffix
-        suffix *= nums[i]
+# def productExceptSelf(nums):
+#     n = len(nums)
+#     output = [1] * n
+#     prefix = 1
+#     for i in range(n):
+#         output[i] = prefix
+#         prefix *= nums[i]
+#     suffix = 1
+#     for i in range(n - 1, -1, -1):
+#         output[i] *= suffix
+#         suffix *= nums[i]
 
-    return output
-nums = [1, 2, 3, 4]
-result = productExceptSelf(nums)
-print(result)
+#     return output
+# nums = [1, 2, 3, 4]
+# result = productExceptSelf(nums)
+# print(result)
 
+# fruit_list1 = ['Apple', 'Berry', 'Cherry', 'Papaya']
+# fruit_list2 = fruit_list1
+# fruit_list3 = fruit_list1[:]
+
+# fruit_list2[0] = 'Guava'
+# fruit_list3[1] = 'Kiwi'
+
+# sum = 0
+
+# for ls in (fruit_list1, fruit_list2, fruit_list3):
+#     if ls[0] == 'Guava':
+#         sum += 1
+#     if ls[1] == 'Kiwi':
+#         sum += 20
+
+# print(sum)
+
+#find second largest element
+# list1 = [3, 1, 4, 1, 5, 9]
+# list1.sort()
+# print(list1)
+# print(list1[-2])
+
+#remove duplicates from unsorted array
+# def remove_duplicates(arr):
+#     seen = set()
+#     result = []
+#     for num in arr:
+#         if num not in seen:
+#             seen.add(num)
+#             result.append(num)
+#     return result
+# arr = [1, 2, 3, 2, 4, 1, 5]
+# print(remove_duplicates(arr))
+        
