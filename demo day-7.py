@@ -86,20 +86,35 @@
 # print("The second largest number in the array is:", result)
 
 # find the total distance between adjacent terms of a list of 5 numbers
-def total_distance(arr):
-    if len(arr) < 2:
-        return 0  # Not enough elements to calculate distance
+# def total_distance(arr):
+#     if len(arr) < 2:
+#         return 0  # Not enough elements to calculate distance
     
-    total_dist = 0
+#     total_dist = 0
     
-    for i in range(1, len(arr)):
-        total_dist += abs(arr[i] - arr[i - 1])
+#     for i in range(1, len(arr)):
+#         total_dist += abs(arr[i] - arr[i - 1])
         
-    return total_dist
+#     return total_dist
+# # Example usage
+# arr = [1, 3, 5, 7, 9]
+# result = total_distance(arr)
+# print("Total distance between adjacent terms:", result)
+
+
+#roy and profile picture(hackerearth problem)
+def check_photo_dimension(L, N, photos):
+    for i in range(N):
+        W, H = photos[i]
+        
+        if W < L or H < L:
+            print("UPLOAD ANOTHER")
+        elif W == H:
+            print("ACCEPTED")
+        else:
+            print("CROP IT")
 # Example usage
-arr = [1, 3, 5, 7, 9]
-result = total_distance(arr)
-print("Total distance between adjacent terms:", result)
-
-
-    
+L = 180 
+N = 3
+photos = [(640, 480), (120, 300), (180, 180)]
+check_photo_dimension(L, N, photos)
