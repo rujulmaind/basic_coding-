@@ -146,3 +146,5 @@ mylist=["apple","banana","cherry","orange","kiwi","melon","mango","grapes","pine
 #     print("Maximum number is: ",num4)   
 # if num5>num1 and num5>num2 and num5>num3 and num5>num4:
 #     print("Maximum number is: ",num5)
+
+# sum of two numbers

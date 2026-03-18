@@ -73,15 +73,29 @@
 # print(list1[-2])
 
 #remove duplicates from unsorted array
-def remove_duplicates(arr):
-    seen = set()
-    result = []
-    for num in arr:
-        if num not in seen:
-            seen.add(num)
-            result.append(num)
-    return result
-arr = [1, 2, 3, 2, 4, 1, 5]
-print(arr)
-print(remove_duplicates(arr))
+# def remove_duplicates(arr):
+#     seen = set()
+#     result = []
+#     for num in arr:
+#         if num not in seen:
+#             seen.add(num)
+#             result.append(num)
+#     return result
+# arr = [1, 2, 3, 2, 4, 1, 5]
+# print(arr)
+# print(remove_duplicates(arr))
 
+myset={1,2,"sanjay",5.66,"rahul","ayush","ramesh","ankit","rishikesh"}
+print(myset)
+
+# myset={1,2,"sanjay",5.66,"sanjay","rahul","ayush","ramesh","ankit","rishikesh"}
+# print(myset)
+# # print(myset[0])
+# myset.add(60)
+# print(myset)
+
+# myset.discard(1)
+# print(myset)    
+
+myset.remove(2)
+print(myset)    
