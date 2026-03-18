@@ -66,24 +66,40 @@
 
 
 # find the second largest number in an array
-def find_second_largest(arr):
-    if len(arr) < 2:
-        return None  # Not enough elements to find the second largest
+# def find_second_largest(arr):
+#     if len(arr) < 2:
+#         return None  # Not enough elements to find the second largest
     
-    first_largest = second_largest = float('-inf')
+#     first_largest = second_largest = float('-inf')
     
-    for num in arr:
-        if num > first_largest:
-            second_largest = first_largest
-            first_largest = num
-        elif first_largest > num > second_largest:
-            second_largest = num
+#     for num in arr:
+#         if num > first_largest:
+#             second_largest = first_largest
+#             first_largest = num
+#         elif first_largest > num > second_largest:
+#             second_largest = num
             
-    return second_largest if second_largest != float('-inf') else None
+#     return second_largest if second_largest != float('-inf') else None
+# # Example usage
+# arr = [3, 1, 4, 1, 5, 9]
+# result = find_second_largest(arr)
+# print("The second largest number in the array is:", result)
+
+# find the total distance between adjacent terms of a list of 5 numbers
+def total_distance(arr):
+    if len(arr) < 2:
+        return 0  # Not enough elements to calculate distance
+    
+    total_dist = 0
+    
+    for i in range(1, len(arr)):
+        total_dist += abs(arr[i] - arr[i - 1])
+        
+    return total_dist
 # Example usage
-arr = [3, 1, 4, 1, 5, 9]
-result = find_second_largest(arr)
-print("The second largest number in the array is:", result)
+arr = [1, 3, 5, 7, 9]
+result = total_distance(arr)
+print("Total distance between adjacent terms:", result)
 
 
     
